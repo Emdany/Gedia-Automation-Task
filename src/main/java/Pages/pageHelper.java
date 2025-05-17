@@ -38,7 +38,7 @@ public class pageHelper extends pageElements {
             for (int i = 0; i < results.size(); i++) {
                 String text = results.get(i).getText().toLowerCase();
                 if(text.contains("engine") || text.contains("horsepower")|| text.contains("Specs")) {
-                    resultIndex = i + 1; // Convert to 1-based index
+                    resultIndex = i + 1; 
                     found = true;
                     break;
                 }
@@ -51,7 +51,7 @@ public class pageHelper extends pageElements {
                 Actions.click(nextButton);
                 paginationCount++;
                 try {
-                    Thread.sleep(2000); // Wait for 2 seconds
+                    Thread.sleep(2000); 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
